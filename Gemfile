@@ -3,3 +3,7 @@
 source "https://rubygems.org"
 
 gem "jekyll"
+
+# Bootstrap prefixes
+gem "jekyll-autoprefixer"
+gem "mini_racer"
