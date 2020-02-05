@@ -3,7 +3,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "All Sewn Up" # the name of your site, e.g. ACME Corp.
 
 sass:
-  style: compressed
+  style: normal
 
 plugins:
     - jekyll-autoprefixer

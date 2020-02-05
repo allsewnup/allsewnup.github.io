@@ -1,17 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/">All Sewn Up</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      {% for item in site.data.navigation %}
-        <li class="nav-item {% if page.url == item.link %}active{% endif %}">
+<nav class="navbar navbar-expand-sm navbar-light bg-navbar border-bottom border-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/assets/graphics/logo.png" alt="All Sewn Up">
+      <span class="asu-navbar-logo h3">All Sewn Up</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarLinks">
+      <ul class="navbar-nav">
+        {% for item in site.data.navigation %}
+        <li class="nav-item mr-2 {% if page.url == item.link %}active font-weight-bold{% endif %}">
           <a class="nav-link" href="{{ item.link }}">
             {{ item.name }}
           </a>
         </li>
-      {% endfor %}
-    </ul>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </nav>

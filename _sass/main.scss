@@ -1,12 +1,19 @@
 @import "variables";
 @import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Vidaloka&display=swap');
 
-$backgroundColor: #ffffff;
-$bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-
-body {
-  background: $backgroundColor;
-  color: $bodyColor;
-  font-family: $bodyFont;
+// Typography
+a:hover, .active a {
+  color: $primary !important;
 }
+
+// Navbar
+.asu-navbar-logo {
+    position: relative;
+    right: 0.75rem;
+    top: 0.25rem;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+
+
