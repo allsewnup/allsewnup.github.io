@@ -7,6 +7,17 @@ a:hover, .active a {
   color: $primary !important;
 }
 
+// HTML, Body
+html,
+body {
+  height: 100%;
+}
+
+// Page Container
+#asu-page-container {
+  flex: 1 0 auto;
+}
+
 // Navbar
 .asu-navbar-logo {
     position: relative;
@@ -15,5 +26,7 @@ a:hover, .active a {
     font-family: 'Fredericka the Great', cursive;
 }
 
-
-
+// Footer
+footer {
+  flex-shrink: 0;
+}
